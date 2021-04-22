@@ -4,9 +4,8 @@ title: The Teracube 2e
 subtitle: The story of the Teracube 2e
 tags: [tech, android]
 ---
-![alt text](https://github.com/gaganmalvi/graphics/raw/main/teracube2e.png "The Teracube 2e.")
-
 The Teracube 2e is a budget smartphone with a 4 year warranty from [Teracube](https://myteracube.com), a startup focused at eco-friendly smartphones having a really long life.
+<img style="float: right" src="https://raw.githubusercontent.com/gaganmalvi/graphics/main/photo_2021-04-07_15-52-20.jpg" height="320"> 
 
 Specs wise, it has a Mediatek Helio G25 (MT6762), with 4 GB of RAM, and 64GB of onboard storage. It comes with a stock Android experience right from the factory. 
 
@@ -14,11 +13,11 @@ The company promises 3 years of Android updates.
 
 I received my Teracube 2e in April 2021, through a developer program they had held, they had taken the pains to get it shipped to India as soon as possible. I would like to thank Sharad Mittal, the founder of Teracube, and my mentor and my friend Kshitij Gupta (AgentFabulous) for giving me such an amazing opportunity.
 
-![Teracube 2e](https://raw.githubusercontent.com/gaganmalvi/graphics/main/photo_2021-04-07_15-52-20.jpg) ![Teracube 2e](https://raw.githubusercontent.com/gaganmalvi/graphics/main/photo_2021-04-09_10-56-27.jpg)
-
 The device in hand, even with a plastic back, felt premium for a Redmi user like me, and it actually felt like a sturdy phone, unlike some devices in the 2021 era.
 
 The case bundled with it provides an extra layer of protection, and the best part is, it's made out of fully recycled materials and feels really good in hand.
+
+<img style="float: left" src="https://raw.githubusercontent.com/gaganmalvi/graphics/main/photo_2021-04-09_10-56-27.jpg" height="320"> 
 
 Soon after receiving it, I unlocked the device, and started working on getting the highly-popular custom Android-based aftermarket firmware or custom ROM, named [LineageOS](https://lineageos.org). It is the successor of the highly-popular defunct ROM, CyanogenMod.
 
@@ -49,40 +48,26 @@ MediaTek in their device board support packages, tend to use properties instead 
 
 Soon after fixing this, I was missing a couple blobs and configuration XML files that caused the device not to boot, but to stay on bootanimation, what we term as a bootloop. One of the errors that I had faced, was 
 ```
-04-08 09:56:21.635  1028  1028 F linker  : CANNOT LINK EXECUTABLE "/system/bin/vtservice": library "vendor.mediatek.hardware.videotelephony@1.0.so" not found
-04-08 09:56:21.732   962   980 W ContextImpl: Missing ActivityManager; assuming 1041 does not hold android.permission.UPDATE_DEVICE_STATS
-04-08 09:56:21.760  1020  1020 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 1020 (audioserver), pid 1020 (audioserver)
-04-08 09:56:21.798  1038  1038 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-04-08 09:56:21.798  1038  1038 F DEBUG   : LineageOS Version: '17.1-20210408-UNOFFICIAL-2e'
-04-08 09:56:21.798  1038  1038 F DEBUG   : Build fingerprint: 'Teracube/Teracube_2e/Teracube_2e:10/QP1A.190711.020/202011161116:user/release-keys'
-04-08 09:56:21.798  1038  1038 F DEBUG   : Revision: '0'
-04-08 09:56:21.798  1038  1038 F DEBUG   : ABI: 'arm64'
-04-08 09:56:21.799  1038  1038 F DEBUG   : Timestamp: 2021-04-08 09:56:21+0000
-04-08 09:56:21.799  1038  1038 F DEBUG   : pid: 1020, tid: 1020, name: audioserver  >>> /system/bin/audioserver <<<
-04-08 09:56:21.799  1038  1038 F DEBUG   : uid: 1041
-04-08 09:56:21.799  1038  1038 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
-04-08 09:56:21.799  1038  1038 F DEBUG   : Cause: null pointer dereference
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x0  0000007c95618880  x1  0000000000000000  x2  0000000000000018  x3  0000000000000018
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x4  0000000020000000  x5  0000000000000018  x6  fefeff7aff647260  x7  7f7f7f7f7f7f7f7f
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x8  0000007c91ffb030  x9  00000000f0000000  x10 0000000000000001  x11 0000000000000000
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x12 0000000000000018  x13 ffffffffffffffff  x14 0000000000000004  x15 ffffffffffffffff
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x16 0000007c91ff9a60  x17 0000007c938db5cc  x18 0000007c9664c000  x19 0000007c91ffb068
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x20 0000007c95634800  x21 0000007c91ff79d8  x22 0000007fdc5c6490  x23 0000000000000000
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x24 0000007c91ffb030  x25 0000007c91ff7a08  x26 0000007c91ffb048  x27 0000007c91ffb068
-04-08 09:56:21.799  1038  1038 F DEBUG   :     x28 0000007c95629f00  x29 0000007fdc5c6600
-04-08 09:56:21.799  1038  1038 F DEBUG   :     sp  0000007fdc5c6430  lr  0000007c91fb228c  pc  0000007c91fb2434
-04-08 09:56:21.807  1038  1038 F DEBUG   : 
-04-08 09:56:21.807  1038  1038 F DEBUG   : backtrace:
-04-08 09:56:21.808  1038  1038 F DEBUG   :       #00 pc 0000000000026434  /system/lib64/libaudiopolicyenginedefault.so (android::audio_policy::EngineBase::loadAudioPolicyEngineConfig()+2352) (BuildId: 785940a16ae0196921fea099a9d52664)
-04-08 09:56:21.808  1038  1038 F DEBUG   :       #01 pc 000000000001d060  /system/lib64/libaudiopolicyenginedefault.so (android::audio_policy::Engine::Engine()+152) (BuildId: 785940a16ae0196921fea099a9d52664)
-04-08 09:56:21.808  1038  1038 F DEBUG   :       #02 pc 0000000000024644  /system/lib64/libaudiopolicyenginedefault.so (android::AudioPolicyManagerInterface* android::audio_policy::EngineInstance::queryInterface<android::AudioPolicyManagerInterface>() const+144) (BuildId: 785940a16ae0196921fea099a9d52664)
-04-08 09:56:21.808  1038  1038 F DEBUG   :       #03 pc 0000000000074000  /system/lib64/libaudiopolicymanagerdefault.so (android::AudioPolicyManager::initialize()+88) (BuildId: 3e0ba592c4ef91149260d93f24609aa5)
-04-08 09:56:21.808  1038  1038 F DEBUG   :       #04 pc 0000000000012e70  /system/lib64/libaudiopolicymanager.so (android::AudioPolicyManagerCustom::AudioPolicyManagerCustom(android::AudioPolicyClientInterface*)+16) (BuildId: 19823d7cc571a21c73cc34f89b88c0a2)
-04-08 09:56:21.808  1038  1038 F DEBUG   :       #05 pc 000000000000c168  /system/lib64/libaudiopolicymanager.so (createAudioPolicyManager+32) (BuildId: 19823d7cc571a21c73cc34f89b88c0a2)
+04-08 12:06:06.683  1020  1020 I FastMixerState: sMaxFastTracks = 8
+04-08 12:06:06.685  1020  1020 V MediaUtils: physMem: 4030423040
+04-08 12:06:06.685  1020  1020 V MediaUtils: requested limit: 536870912
+04-08 12:06:06.685  1020  1020 I libc    : malloc_limit: Allocation limit enabled, max size 536870912 bytes
+04-08 12:06:06.686  1020  1020 I audioserver: ServiceManager: 0x7d66bbadc0
+04-08 12:06:06.688  1020  1020 I audioserver: type=1400 audit(0.0:4675): avc: denied { call } for scontext=u:r:audioserver:s0 tcontext=u:r:init:s0 tclass=binder permissive=1[
+04-08 12:06:06.696  1020  1020 I AudioFlinger: Using default 3000 mSec as standby time.
+04-08 12:06:06.697  1020  1020 E APM::Serializer: deserialize: Could not parse /odm/etc/audio_policy_configuration.xml document.
+04-08 12:06:06.697  1020  1020 E APM::Serializer: deserialize: Could not parse /vendor/etc/audio/audio_policy_configuration.xml document.
+04-08 12:06:06.704  1020  1020 E APM::Serializer: deserialize: libxml failed to resolve XIncludes on /vendor/etc/audio_policy_configuration.xml document.
+04-08 12:06:06.708  1020  1020 E APM::AudioPolicyEngine/Config: parse: Could not parse document /vendor/etc/audio_policy_engine_configuration.xml
+04-08 12:06:06.708  1020  1020 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration found, using default matching phone experience.
+04-08 12:06:06.708  1020  1020 E APM::AudioPolicyEngine/Config: parseLegacyVolumeFile: Could not parse document /odm/etc/audio_policy_configuration.xml
+04-08 12:06:06.714  1020  1020 E APM::AudioPolicyEngine/Config: parseLegacyVolumeFile: libxml failed to resolve XIncludes on document /vendor/etc/audio_policy_configuration.xml
+04-08 12:06:06.714  1020  1020 E APM::AudioPolicyEngine/Config: parseLegacyVolumeFile: Could not parse document /system/etc/audio_policy_configuration.xml
+04-08 12:06:06.714  1020  1020 E APM::AudioPolicyEngine/Base: skipped 1 elements
 ```
 ```aurisys``` configuration XMLs, and because of a missing ```default_volume_tables``` XML that I needed to copy from ```frameworks/native```, caused it to bootloop.  Soon after fixing the ```vtservice``` error and the missing XML issues, the device booted, and fixing the remaining bugs on the device was a cakewalk, since most of the issues either were easy fixes, and the rest were already documented.
 
-![LineageOS on the Teracube 2e.](https://pbs.twimg.com/media/Eyf9HE4VIAIg8Ex?format=jpg&name=medium)
+<img src="https://pbs.twimg.com/media/Eyf9HE4VIAIg8Ex?format=jpg&name=medium" height="480">
 
 Soon after LineageOS, I also booted [/e/OS](https://e.foundation), a privacy focused Android distribution, that also comes preinstalled on many Android devices. 
 
