@@ -1,13 +1,13 @@
-title: Parchment
-author: pro-panda
-subtitle: The life of a frustrated engineer
+title: Malvi's Blog
+author: gaganmalvi
+subtitle: My adventures
 
-url: "https://pro-panda.github.io"
-baseurl: "/parchment"
+url: "https://malvi.ml"
+baseurl: "/blog"
 
 footer_only_homepage: true
-footer_url: "https://github.com/pro-panda"
-footer_text: "Theme by pro-panda"
+footer_url: "https://github.com/gaganmalvi"
+footer_text: "GitHub Profile"
 
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
@@ -21,4 +21,4 @@ navbar:
  - name: "About"
    link: "about"
  - name: "Resume"
-   absolute-link: "https://pro-panda.github.io/resume.pdf"
+   absolute-link: "https://malvi.ml/"
