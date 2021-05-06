@@ -67,7 +67,7 @@ Soon after fixing this, I was missing a couple blobs and configuration XML files
 ```
 ```aurisys``` configuration XMLs, and because of a missing ```default_volume_tables``` XML that I needed to copy from ```frameworks/native```, caused it to bootloop.  Soon after fixing the ```vtservice``` error and the missing XML issues, the device booted, and fixing the remaining bugs on the device was a cakewalk, since most of the issues either were easy fixes, and the rest were already documented.
 
-<img src="https://pbs.twimg.com/media/Eyf9HE4VIAIg8Ex?format=jpg&name=medium" height="480">
+<img src="https://camo.githubusercontent.com/b8e2ed720715e011a68cfe244217da44da6adeaa303ec75e11a30ef9f475cbad/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4579663948453456494149673845783f666f726d61743d6a7067266e616d653d6d656469756d" height="480">
 
 Soon after LineageOS, I also booted [/e/OS](https://e.foundation), a privacy focused Android distribution, that also comes preinstalled on many Android devices. 
 
